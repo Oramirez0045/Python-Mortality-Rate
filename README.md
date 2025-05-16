@@ -18,3 +18,7 @@ Allows users to experiment with factors like age changes or smoking status to vi
 - Matplotlib: Data Visualization
 - Pandas: Data Organization
 - Flask or PyQt: User Interface
+
+## Contributers
+- Philip Tan
+- Oscar Ramirez
