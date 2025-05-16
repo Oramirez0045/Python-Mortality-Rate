@@ -1,4 +1,4 @@
-# Python-Mortality-Rate
+# Python Mortality Rate
 
 ## Overview
 This project is designed to help users understand how personal factors (such as age, gender, and smoking status) affects their risk of mortality and insurance premium rates. By using publicly available mortality tables, the application visualizes there risks and estimates simplifies insurance premiums. Users can input their characteristics to see their positioning on interactive graphs and explore hypothetical scenarios such as the impact of quitting smoking or aging on their insurance rates
