@@ -1,2 +1,3 @@
 ## Sources and Acknowledgments
 Copied and pasted Python code from https://tkdocs.com/tutorial/firstexample.html; modified to fit our GUI's needs
+https://www.geeksforgeeks.org/how-to-embed-matplotlib-charts-in-tkinter-gui/
