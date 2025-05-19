@@ -1,2 +1,3 @@
 ## Sources and Acknowledgments
-https://tkdocs.com/tutorial/firstexample.html
+Copied and pasted Python code from https://tkdocs.com/tutorial/firstexample.html
+Modified to fit our GUI's needs
