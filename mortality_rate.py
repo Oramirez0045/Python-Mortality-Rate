@@ -1,29 +1,34 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-#dictionary with files already set, hopefully we find a way to not write all of this to make the code shorter
-files = {
-    'Female_Non-Smoker' : 'Female_Non-Smoker_2017.csv',
-    'Female_Smoker' : 'Female_Smoker_2017.csv',
-    'Male_Non-Smoker' : 'Male_Non-Smoker_2017.csv',
-    'Male_Smoker' : 'Male_Smoker_2017.csv',
-    'Mix_Non-Smoker' : 'Mix_Non-Smoker_2017.csv',
-    'Mix_Smoker' : 'Mix_Smoker_2017.csv'
-}
+def rename(s):
+    self = s
+    self = self.replace('.csv', '')
+    self = self.replace('_', ' ')
+    return self
 
-#for loop that iterates through the dictionary to repeat the process of cleaning the data and exporting the plot as a jpg
-for name, dataFile in files.items():
-  #this ensures the error of not having the files already cleaned from stopping the program
-  #so if one file is cleaned it'll keep running and another isnt, it'll remind you to clean it
+files = [
+    "Female_Non-Smoker_2017.csv",
+    "Female_Smoker_2017.csv",
+    "Male_Non-Smoker_2017.csv",
+    "Male_Smoker_2017.csv",
+    "Mix_Non-Smoker_2017.csv",
+    "Mix_Smoker_2017.csv",
+]
+
+for dataFile in files:
     try:
-        print(name)
+        #assiging values to variables
         data = pd.read_csv(dataFile)
-        data.drop(data.columns[2:], axis=1, inplace=True)
+        name = rename(dataFile)
+
+        #remove empty columns
+        data.drop(data.columns[2:], axis = 1, inplace = True)
+        print(name)
         print(data.head())
 
         plt.figure()
-        plt.plot(data[r'Row\Column'], data['1'], color = "Green")
-        plt.title("Mortality Rates: " + name)
-        plt.savefig(name + '.jpg') #this will download the plot onto your computer
+        plt.plot(data[r'Row\Column'], data['1'], color = 'Green')
+        plt.title('Mortality Rate: ' + name)
     except:
-        print("Error loading ", name, " make sure files are cleaned")
+        print("Error loading plot for" , name , "make sure file is cleaned")
