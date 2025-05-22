@@ -2,3 +2,5 @@
 https://tkdocs.com/tutorial/firstexample.html
 https://www.geeksforgeeks.org/how-to-embed-matplotlib-charts-in-tkinter-gui/
 https://matplotlib.org/stable/api/figure_api.html
+https://matplotlib.org/stable/users/explain/axes/axes_intro.html
+https://www.geeksforgeeks.org/setting-the-position-of-tkinter-labels/
