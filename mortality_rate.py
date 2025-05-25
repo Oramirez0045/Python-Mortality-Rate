@@ -1,5 +1,6 @@
 import pandas as pd
-import matplotlib.pyplot as plt
+import plotly.graph_objects as go
+import os
 
 def rename(s):
     self = s
@@ -7,28 +8,35 @@ def rename(s):
     self = self.replace('_', ' ')
     return self
 
-files = [
-    "Female_Non-Smoker_2017.csv",
-    "Female_Smoker_2017.csv",
-    "Male_Non-Smoker_2017.csv",
-    "Male_Smoker_2017.csv",
-    "Mix_Non-Smoker_2017.csv",
-    "Mix_Smoker_2017.csv",
-]
+folder = 'csv'
+fileList = os.listdir(folder)
 
-for dataFile in files:
-    try:
-        #assiging values to variables
-        data = pd.read_csv(dataFile)
-        name = rename(dataFile)
+figure = go.Figure()
 
-        #remove empty columns
-        data.drop(data.columns[2:], axis = 1, inplace = True)
-        print(name)
-        print(data.head())
+for file in fileList:
+    if file.endswith('.csv'):
+        path = os.path.join(folder, file)
+        data = pd.read_csv(path)
+        data.drop(data.columns[2:], axis=1, inplace=True)
+        data.columns = ['Age', 'Mortality Rate']
 
-        plt.figure()
-        plt.plot(data[r'Row\Column'], data['1'], color = 'Green')
-        plt.title('Mortality Rate: ' + name)
-    except:
-        print("Error loading plot for" , name , "make sure file is cleaned")
+        figure.add_trace(go.Scatter(
+            x = data['Age'],
+            y = data['Mortality Rate'],
+            mode = 'markers',
+            marker = dict(color='darkblue'),
+            name = rename(file),
+            showlegend = False
+        ))
+
+figure.update_layout(
+    title = "Mortality Rate",
+    xaxis_title = "Age",
+    yaxis_title = "Mortality Rate",
+    hovermode = "closest"
+)
+figure.add_vline(
+    x = 95,
+    line = dict(color="red", width=2),
+)
+figure.show()
