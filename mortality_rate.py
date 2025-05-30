@@ -1,5 +1,6 @@
 import pandas as pd
 import plotly.graph_objects as go
+import plotly.offline as plt
 import os
 
 #function looks through csv files, collecting information on how to name the files
@@ -48,9 +49,10 @@ for file in fileList:
         ))
 
         #saves info, this could be helpful for user interface so its able to interact and change
-        data.to_csv(f'clean_data/{name}.csv', index=False)
+        #note this line will save the clean data onto clean_data, either change name or create folder
+        data.to_csv(f'clean_data/{dfName}.csv', index=False)
 
-# Finalize and show plot
+#title and show plot
 figure.update_layout(
     title = "Mortality Rate",
     xaxis_title = "Age",
@@ -58,4 +60,4 @@ figure.update_layout(
     hovermode = "closest"
 )
 figure.add_vline(x = 95, line = dict(color = "red", width = 2))
-figure.show()
+plt.plot(figure, filename = 'Mortality_Table_Plot.html')
