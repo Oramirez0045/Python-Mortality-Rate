@@ -1,6 +1,34 @@
-## Sources and Acknowledgments
-https://tkdocs.com/tutorial/firstexample.html
-https://www.geeksforgeeks.org/how-to-embed-matplotlib-charts-in-tkinter-gui/
-https://matplotlib.org/stable/api/figure_api.html
-https://matplotlib.org/stable/users/explain/axes/axes_intro.html
-https://www.geeksforgeeks.org/setting-the-position-of-tkinter-labels/
+Sources and acknowledgements :
+Iterating through files
+- https://stackoverflow.com/questions/73346654/how-to-loop-through-a-folder-in-python
+- https://docs.python.org/3/library/os.html
+- chatgpt for debugging and practice examples
+
+Pandas:
+- https://www.codecademy.com/ (most of the free lessons)
+- lecture notes
+- chatgpt for debugging and practice examples
+
+Mortality Tables:
+- https://mort.soa.org/ViewTable.aspx?&TableIdentity=3372 (Female Smoker)
+- https://mort.soa.org/ViewTable.aspx?&TableIdentity=3371 (Male Smoker)
+- https://mort.soa.org/ViewTable.aspx?&TableIdentity=3370 (Female Non-Smoker)
+- https://mort.soa.org/ViewTable.aspx?&TableIdentity=3369 (Male Non-Smoker)
+- https://mort.soa.org/ViewTable.aspx?&TableIdentity=3336 (Gender-Blended Smoker)
+- https://mort.soa.org/ViewTable.aspx?&TableIdentity=3326 (Gender-Blended Non-Smoker)
+- chatgpt for understanding keywords
+
+Matplotlib:
+- https://matplotlib.org/stable/api/figure_api.html
+- https://matplotlib.org/stable/users/explain/axes/axes_intro.html
+- https://www.geeksforgeeks.org/how-to-embed-matplotlib-charts-in-tkinter-gui/
+- lecture notes
+
+Tkinter:
+- https://tkdocs.com/tutorial/firstexample.html
+- https://www.geeksforgeeks.org/how-to-embed-matplotlib-charts-in-tkinter-gui/
+- https://www.geeksforgeeks.org/setting-the-position-of-tkinter-labels/
+
+Plotly:
+- https://plotly.com/python/line-and-scatter/
+- chatgpt for debugging
