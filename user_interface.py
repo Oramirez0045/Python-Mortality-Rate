@@ -19,6 +19,7 @@ def plot():
 #https://www.geeksforgeeks.org/setting-the-position-of-tkinter-labels/
 import tkinter as tk
 from tkinter import *
+import tkinterweb
 
 root = tk.Tk()
 
@@ -64,7 +65,17 @@ smoker_entry = tk.Entry(root, textvariable=smoker)
 smoker_entry.grid(row = 2, column = 5)
 
 #Button
-button = tk.Button(root, text="Display my mortality", command=display_mortality)
+button = tk.Button(root, text="Display my mortality (old)", command=display_mortality)
 button.grid(row = 5, column = 0)
+
+#https://stackoverflow.com/questions/78282970/how-do-i-put-a-html-file-inside-a-python-tkinter-window
+def load_website():
+    frame.load_website('https://www.google.com')
+
+button = tk.Button(master=root, text='Display my mortality (new)', command=load_website)
+button.grid(row = 7, column = 0)
+
+frame = tkinterweb.HtmlFrame(master=root)
+frame.grid(row = 8, column = 0)
 
 root.mainloop()
