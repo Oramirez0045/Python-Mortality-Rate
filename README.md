@@ -5,7 +5,7 @@ This project is designed to help users understand how personal factors (such as 
 
 ## Features
 #### - Mortality Rate Vizualization:
-Displays mortality rates based on public datasets, allowing users to visual8ize riks by age, sex, and smoking status
+Displays mortality rates based on public datasets, allowing users to visualize riks by age, sex, and smoking status
 #### - Interactive Risk Analysis:
 Users can input their own characteristics to see where they fall on the risk curve and compare different scenarios
 #### - Premium Estimator:
