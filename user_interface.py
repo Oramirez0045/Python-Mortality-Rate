@@ -65,14 +65,14 @@ smoker_entry = tk.Entry(root, textvariable=smoker)
 smoker_entry.grid(row = 2, column = 5)
 
 #Button
-button = tk.Button(root, text="Display my mortality (old)", command=display_mortality)
+button = tk.Button(root, text="Display my mortality (old), need to fill in all 3 text boxes above before clicking", command=display_mortality)
 button.grid(row = 5, column = 0)
 
 #https://stackoverflow.com/questions/78282970/how-do-i-put-a-html-file-inside-a-python-tkinter-window
 def load_website():
     frame.load_website('https://www.google.com')
 
-button = tk.Button(master=root, text='Display my mortality (new)', command=load_website)
+button = tk.Button(master=root, text='Display my mortality (new), loading random website for now', command=load_website)
 button.grid(row = 7, column = 0)
 
 frame = tkinterweb.HtmlFrame(master=root)
