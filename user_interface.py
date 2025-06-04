@@ -32,7 +32,6 @@ smoker = tk.StringVar()
 smoker_entry = tk.Entry(root, textvariable=smoker)
 smoker_entry.grid(row = 2, column = 5)
 
-
 # Opening html plotly graph with Tkinter (Google Gemini 3 June 2025)
 def display_mortality(*args):
     age_value = int(age.get())
