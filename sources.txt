@@ -28,7 +28,7 @@ Tkinter:
 - https://tkdocs.com/tutorial/firstexample.html
 - https://www.geeksforgeeks.org/how-to-embed-matplotlib-charts-in-tkinter-gui/
 - https://www.geeksforgeeks.org/setting-the-position-of-tkinter-labels/
-- Gemini prompt "how to include plotly in tkinter" date of search june 3
+- Some code was suggested by Google Gemini (3 June 2025) for "how to include plotly in tkinter"
 
 Plotly:
 - https://plotly.com/python/line-and-scatter/
