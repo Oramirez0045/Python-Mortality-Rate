@@ -1,23 +1,6 @@
 from graph import plotGraph
 import webbrowser
 
-#https://www.geeksforgeeks.org/how-to-embed-matplotlib-charts-in-tkinter-gui/
-#https://matplotlib.org/stable/api/figure_api.html
-#https://matplotlib.org/stable/users/explain/axes/axes_intro.html
-from matplotlib.figure import Figure
-from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
-import matplotlib.pyplot as plt
-
-def plot():
-    fig, ax = plt.subplots(figsize=(6, 6))
-    x = [3,2,95,24,235,0]
-    y = [1,4,3,2,3,5]
-    ax.plot(x, y)
-
-    canvas = FigureCanvasTkAgg(fig, master = root)  
-    canvas.draw()
-    canvas.get_tk_widget().grid()
-
 #https://tkdocs.com/tutorial/firstexample.html
 #https://www.geeksforgeeks.org/setting-the-position-of-tkinter-labels/
 import tkinter as tk
