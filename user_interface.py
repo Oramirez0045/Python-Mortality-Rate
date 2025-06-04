@@ -19,24 +19,6 @@ sex_label.grid(row = 1, column = 0)
 smoker_label = tk.Label(root, text="Smoker? (Y/N)")
 smoker_label.grid(row = 2, column = 0)
 
-#This function will be run when the user clicks the button
-#It decides which graph to display based on the user's inputs
-def display_mortality(*args):
-    age_value = int(age.get())
-    sex_value = sex.get()
-    smoker_value = smoker.get()
-    if age_value > 0:
-        if sex_value == "M":
-            if smoker_value == "Y":
-                plot()
-            elif smoker_value == "N":
-                plot()
-        elif sex_value == "F":
-            if smoker_value == "Y":
-                plot()
-            elif smoker_value == "N":
-                plot()
-
 #User input variables
 age = tk.StringVar()
 age_entry = tk.Entry(root, textvariable=age)
@@ -50,16 +32,20 @@ smoker = tk.StringVar()
 smoker_entry = tk.Entry(root, textvariable=smoker)
 smoker_entry.grid(row = 2, column = 5)
 
-a = plotGraph(gender = 'F', smoke = 'N', printAll = True)
 
 # Opening html plotly graph with Tkinter (Google Gemini 3 June 2025)
-html_file = "Mortality_Table.html"
-a.write_html(html_file)
-
-def open_browser():
+def display_mortality(*args):
+    age_value = int(age.get())
+    sex_value = sex.get()
+    smoker_value = smoker.get()
+    
+    a = plotGraph(gender = sex_value, smoke = smoker_value, printAll = True)
+    
+    html_file = "Mortality_Table.html"
+    a.write_html(html_file)
     webbrowser.open(html_file)
 
-button = tk.Button(root, text="Display My Mortality", command=open_browser)
+button = tk.Button(root, text="Display My Mortality", command=display_mortality)
 button.grid(row = 5, column = 0)
 
 root.mainloop()
