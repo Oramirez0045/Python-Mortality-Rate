@@ -94,6 +94,7 @@ def plotGraph(gender = False, age = False, smoke = False, printAll = False, prin
     hovermode = "closest")
     
     figure.add_vline(x = 95, line = dict(color = "red", width = 2))
-    pltoff.plot(figure, filename = 'Mortality_Table.html')
+    return figure
+    #pltoff.plot(figure, filename = 'Mortality_Table.html')
     
-plotGraph(gender = 'F', smoke = 'N', printAll = True)
+#plotGraph(gender = 'F', smoke = 'N', printAll = True)
