@@ -18,12 +18,6 @@ Mortality Tables:
 - https://mort.soa.org/ViewTable.aspx?&TableIdentity=3326 (Gender-Blended Non-Smoker)
 - chatgpt for understanding keywords
 
-Matplotlib:
-- https://matplotlib.org/stable/api/figure_api.html
-- https://matplotlib.org/stable/users/explain/axes/axes_intro.html
-- https://www.geeksforgeeks.org/how-to-embed-matplotlib-charts-in-tkinter-gui/
-- lecture notes
-
 Tkinter:
 - https://tkdocs.com/tutorial/firstexample.html
 - https://www.geeksforgeeks.org/how-to-embed-matplotlib-charts-in-tkinter-gui/
