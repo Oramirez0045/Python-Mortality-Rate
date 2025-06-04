@@ -1,3 +1,6 @@
+from graph import plotGraph
+import webbrowser
+
 #https://www.geeksforgeeks.org/how-to-embed-matplotlib-charts-in-tkinter-gui/
 #https://matplotlib.org/stable/api/figure_api.html
 #https://matplotlib.org/stable/users/explain/axes/axes_intro.html
@@ -64,18 +67,16 @@ smoker = tk.StringVar()
 smoker_entry = tk.Entry(root, textvariable=smoker)
 smoker_entry.grid(row = 2, column = 5)
 
-#Button
-button = tk.Button(root, text="Display my mortality (old), need to fill in all 3 text boxes above before clicking", command=display_mortality)
+a = plotGraph(gender = 'F', smoke = 'N', printAll = True)
+
+# Opening html plotly graph with Tkinter (Google Gemini 3 June 2025)
+html_file = "Mortality_Table.html"
+a.write_html(html_file)
+
+def open_browser():
+    webbrowser.open(html_file)
+
+button = tk.Button(root, text="Display My Mortality", command=open_browser)
 button.grid(row = 5, column = 0)
-
-#https://stackoverflow.com/questions/78282970/how-do-i-put-a-html-file-inside-a-python-tkinter-window
-def load_website():
-    frame.load_website('https://www.google.com')
-
-button = tk.Button(master=root, text='Display my mortality (new), loading random website for now', command=load_website)
-button.grid(row = 7, column = 0)
-
-frame = tkinterweb.HtmlFrame(master=root)
-frame.grid(row = 8, column = 0)
 
 root.mainloop()
