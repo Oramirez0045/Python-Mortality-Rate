@@ -1,5 +1,5 @@
 ##Sources and Acknowledgements
-Iterating through files
+Iterating through files:
 - https://stackoverflow.com/questions/73346654/how-to-loop-through-a-folder-in-python
 - https://docs.python.org/3/library/os.html
 - chatgpt for debugging and practice examples
@@ -27,12 +27,12 @@ Tkinter:
 - https://www.geeksforgeeks.org/how-to-embed-matplotlib-charts-in-tkinter-gui/
 - https://www.geeksforgeeks.org/setting-the-position-of-tkinter-labels/
 - https://www.tutorialspoint.com/how-to-change-tkinter-label-text-on-button-press
-- Some code was suggested by Google Gemini (3 June 2025) for "how to include plotly in tkinter"
-- Some code was suggested by ChatGPT (2025 June 8) for "how to space apart all preexisting items in tkinter after using grid manager"
-- Some code was suggested by ChatGPT (2025 June 8) for "how to increase text size for every preexisting label tkinter"
-- Some code was suggested by ChatGPT (2025 June 8) for "how to change font style for every preexisting label tkinter"
-- Some code was suggested by ChatGPT (2025 June 8) for "how to change button color tkinter"
 - https://mockuuups.studio/blog/post/best-fonts-for-apps/
+- Some code was suggested by Google Gemini (3 June 2025) for "how to include plotly in tkinter"
+- Some code was suggested by ChatGPT (8 June 2025) for "how to space apart all preexisting items in tkinter after using grid manager"
+- Some code was suggested by ChatGPT (8 June 2025) for "how to increase text size for every preexisting label tkinter"
+- Some code was suggested by ChatGPT (8 June 2025) for "how to change font style for every preexisting label tkinter"
+- Some code was suggested by ChatGPT (8 June 2025) for "how to change button color tkinter"
 
 Understanding premiums:
 - https://www.selectquote.com/life-insurance/articles/life-insurance-classifications
