@@ -150,8 +150,7 @@ for widget in root.grid_slaves():
     widget.grid_configure(padx=10, pady=10)
     if isinstance(widget, tk.Label):
         current_font = font.nametofont(widget.cget("font"))
-        current_font.configure(size=current_font.cget("size") + 1)
-        current_font.configure(family="Inter")
+        current_font.configure(size=current_font.cget("size") + 1, family="Inter")
         widget.config(font=current_font)
 
 root.mainloop()
