@@ -28,10 +28,7 @@ Plotly:
 - https://plotly.com/python/line-and-scatter/
 - chatgpt for debugging
 
-"how to locate the y value given x value for a scatter plot you created with plotly.graph_objects" (Google Gemini 7 June 2025)
-"ndarray how to search for element" (Google Gemini 7 June 2025)
 https://www.tutorialspoint.com/how-to-change-tkinter-label-text-on-button-press
-"how to wait in tkinter" (Google Gemini 7 June 2025)        
 https://www.selectquote.com/life-insurance/articles/life-insurance-classifications
 https://www.investopedia.com/terms/i/insurance-risk-class.asp
 https://www.quotacy.com/what-are-life-insurance-risk-classifications/
