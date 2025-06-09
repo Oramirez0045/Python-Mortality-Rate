@@ -28,6 +28,7 @@ import os
 import plotly.offline as pltoff
 
 def plotGraph(gender = False, age = False, smoker = False, compareGender = False, compareSmoker = False):
+    cleanData("./unclean_csv")
     #makes sure user enters the correct words
     if gender not in ['Male', 'Female',False]:
         raise ValueError("Gender must be 'Male', 'Female', or left empty")
