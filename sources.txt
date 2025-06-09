@@ -32,3 +32,9 @@ https://www.tutorialspoint.com/how-to-change-tkinter-label-text-on-button-press
 https://www.selectquote.com/life-insurance/articles/life-insurance-classifications
 https://www.investopedia.com/terms/i/insurance-risk-class.asp
 https://www.quotacy.com/what-are-life-insurance-risk-classifications/
+
+chatgpt "how to space apart all preexisting items in tkinter after using grid manager" June 8 2025
+chatgpt "how to increase text size for every preexisting label tkinter" June 8 
+chatgpt "how to change font style for every preexisting label tkinter" June 8 2025
+chatgpt "how to change button color tkinter" June 8 2025
+https://mockuuups.studio/blog/post/best-fonts-for-apps/
