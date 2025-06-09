@@ -31,7 +31,13 @@ conda install matplotlib
 
 3) How to run and use your project
 
-You should download these files: data_cleaning.py, graph.py, user_interface.py, and 6 CSV files containing mortality data. You should put all of these in the same folder. Additionally, you should make a separate subfolder inside the folder and put all 6 CSV files in the subfolder. Then, you should run user_interface.py.
+You should download these files: data_cleaning.py, graph.py, user_interface.py, and 6 CSV files containing mortality data. The 6 CSV files can be found from this Society of Actuaries website:
+
+https://mort.soa.org/
+
+The left column has the table numbers. You should download tables 3372, 3371, 3370, 3369, 3336, and 3326 as CSV files.
+
+You should put all of these in the same folder. Additionally, you should make a separate subfolder inside the folder and put all 6 CSV files in the subfolder. Then, you should run user_interface.py.
 
 An example usage would be to type "35" in the Age text box, "Male" in the Gender text box, "Y" in the Smoker text box, and click the Compare Gender checkbox. Then, you can click the Display My Mortality button which will open an HTML file with an interactive graph in your browser. The graph has a vertical red line which is to show that there isn't much data to the right of that line and that portion might thus be unreliable. You can also click on the Calculate My Premium button which will provide a rough estimate of a range for your premium.
 
