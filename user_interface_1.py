@@ -147,10 +147,10 @@ premium_button.grid(row = 6, column = 0)
 #"how to change button color tkinter"
 #https://mockuuups.studio/blog/post/best-fonts-for-apps/
 for widget in root.grid_slaves():
-    widget.grid_configure(padx=10, pady=10)
+    widget.grid_configure(padx = 10, pady = 10)
     if isinstance(widget, tk.Label):
         current_font = font.nametofont(widget.cget("font"))
-        current_font.configure(size=current_font.cget("size") + 1, family="Inter")
-        widget.config(font=current_font)
+        current_font.configure(size = current_font.cget("size") + 1, family = "Inter")
+        widget.config(font = current_font)
 
 root.mainloop()
