@@ -1,1 +1,6 @@
-qwerty
+Pyplot, Pandas, Tkinter
+
+Since Python and Tkinter are already built in, you only need to install pandas and matplotlib for pyplot.
+
+conda install pandas
+conda install matplotlib
