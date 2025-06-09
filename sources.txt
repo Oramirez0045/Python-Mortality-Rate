@@ -1,4 +1,4 @@
-##Sources and Acknowledgements
+Sources and Acknowledgements
 Iterating through files:
 - https://stackoverflow.com/questions/73346654/how-to-loop-through-a-folder-in-python
 - https://docs.python.org/3/library/os.html
@@ -22,7 +22,7 @@ Plotly:
 - https://plotly.com/python/line-and-scatter/
 - chatgpt for debugging
 
-Tkinter:
+Tkinter/building the UI:
 - https://tkdocs.com/tutorial/firstexample.html
 - https://www.geeksforgeeks.org/how-to-embed-matplotlib-charts-in-tkinter-gui/
 - https://www.geeksforgeeks.org/setting-the-position-of-tkinter-labels/
